@@ -49,7 +49,7 @@ Kafka: localhost:9092 <br/>
 Schema Registry: http://localhost:8081 <br/>
 Control Center: http://localhost:9021 <br/>
 
-### 4. Podman and Podman Compose installed on your system. (https://podman.io/docs/installation)
+### Alternative Approach: Podman and Podman Compose installed on your system. (https://podman.io/docs/installation)
 
 Create a file named docker-compose.yml with the following content:
 
