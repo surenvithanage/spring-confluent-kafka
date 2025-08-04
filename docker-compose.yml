@@ -1,60 +1,3 @@
-# 🛠️ Setting Up Local Kafka (Confluent) for Local Testing
-
-This guide helps you run a **local Confluent Kafka instance** for development and testing using either Docker or the Confluent CLI.
-
----
-
-## 📦 Prerequisites
-
-- [Docker](https://www.docker.com/get-started)
-- [Confluent CLI](https://docs.confluent.io/confluent-cli/current/install.html) (optional)
-- At least **8GB RAM** available
-
----
-
-## 🚀 Quick Start with Docker
-
-### 1. Clone the Setup Repository
-
-```bash
-git clone https://github.com/surenvithanage/spring-confluent-kafka
-cd spring-confluent-kafka
-```
-
-
-### 2. Start Kafka and Dependencies
-```bash
-docker-compose -f spring-confluent-kafka/docker-compose.yml up -d
-```
-
-This starts: <br>
-Kafka Broker <br>
-Zookeeper <br>
-Schema Registry <br>
-Kafka Connect <br>
-Control Center <br>
-ksqlDB <br>
-
-### 3. Verify Services
-
-Check if containers are running:
-
-```bash
-docker ps
-```
-
-Default ports:
-
-Kafka: localhost:9092 <br/>
-Schema Registry: http://localhost:8081 <br/>
-Control Center: http://localhost:9021 <br/>
-
-### 4. Podman and Podman Compose installed on your system. (https://podman.io/docs/installation)
-
-Create a file named docker-compose.yml with the following content:
-
-
-```bash
 ---
 services:
 
@@ -221,4 +164,3 @@ services:
       KAFKA_REST_LISTENERS: "http://0.0.0.0:8082"
       KAFKA_REST_SCHEMA_REGISTRY_URL: 'http://schema-registry:8081'
 
-```
