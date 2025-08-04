@@ -1,0 +1,7 @@
+com/service/confluent/service/UserEventProducer.class
+com/service/confluent/service/UserEventConsumer.class
+com/service/confluent/config/ProducerConfig.class
+com/service/confluent/avro/UserEvent.class
+com/service/confluent/ConfluentApplication.class
+com/service/confluent/config/ConsumerConfig.class
+com/service/confluent/avro/UserEvent$Builder.class
